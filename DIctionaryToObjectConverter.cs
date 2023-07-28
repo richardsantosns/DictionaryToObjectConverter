@@ -98,7 +98,6 @@ public class DictionaryToObjectConverter
             object convertedItem;
             if (item is Dictionary<string, object> nestedDictionary)
             {
-                // Recursively convert nested dictionaries within the list.
                 convertedItem = ConvertNestedDictionary(nestedDictionary, elementType);
             }
             else
